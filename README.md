@@ -3,19 +3,22 @@
 ## Background
 
 This sample project demonstrates running Detox tests prior to a regular MS [AppCenter](https://appcenter.ms/) build
-* On React Native 0.56.0
-* In Xcode 10.1 with Detox 9.0.4 [![Build status](https://build.appcenter.ms/v0.1/apps/b941d881-bc98-48d1-8bc6-8ddf76856b36/branches/detox_9.0.4-xcode_10.1/badge)](https://appcenter.ms)
-* And using Mocha runner, currently
+* on React Native 0.56.0
+* with Detox 9.0.4 built by Xcode 10.1 [![Build status](https://build.appcenter.ms/v0.1/apps/b941d881-bc98-48d1-8bc6-8ddf76856b36/branches/detox_9.0.4-xcode_10.1/badge)](https://appcenter.ms)
+* and Mocha 5.2.0 test runner, currently
 
 ## Requirements
 
 Make sure you have installed:
 * Xcode (tested with Xcode 9.4.1 and Xcode 10.1)
-* Node.js (`brew install node` or via nvm etc, node 8.X and up is _required_)
+* xcpretty (`gem install xcpretty` - https://github.com/supermarin/xcpretty)
+* Node.js (`brew install node@8` or `nvm install`. Node version 8.X or newer is _required_)
 * react-native dependencies:
    * watchman is installed (`brew install watchman`)
 
-### Step 1: Install Dependancies
+See software installation commands in `appcenter-post-clone.sh` for any other dependencies that may need to be installed to build and run this project anywhere other than in MS [AppCenter](https://appcenter.ms/).
+
+### Step 1: Install Dependencies
 
 * Run `npm install`.
 
